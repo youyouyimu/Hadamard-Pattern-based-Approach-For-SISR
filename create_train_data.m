@@ -5,13 +5,13 @@ close all;
 scale = 4;
 
 
-folder = 'Source1';   % SRCNN的训练数据(91 images)
+folder = 'Source1';   % 91 images
 mkdir(['Images1\Train_' num2str(scale) 'H']);
 mkdir(['Images1\Train_' num2str(scale) 'L']);   
 savepath1 = ['Images1\Train_' num2str(scale) 'H'];
 savepath2 = ['Images1\Train_' num2str(scale) 'L'];
 
-filepaths = dir(fullfile(folder,'*.bmp'));  % 到最后将还是将图片保存成BMP格式
+filepaths = dir(fullfile(folder,'*.bmp'));  % *.bmp
 numfile = length(filepaths);
 numdigit = numel(num2str(numfile));
 
