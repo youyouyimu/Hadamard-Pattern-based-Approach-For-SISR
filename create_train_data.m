@@ -6,8 +6,8 @@ scale = 4;
 
 
 folder = 'Source1';   % 91 images
-mkdir(['Images1\Train_' num2str(scale) 'H']);
-mkdir(['Images1\Train_' num2str(scale) 'L']);   
+mkdir(['Images1\Train_' num2str(scale) 'H']);   % The path for HR training images
+mkdir(['Images1\Train_' num2str(scale) 'L']);   % The path for LR training images
 savepath1 = ['Images1\Train_' num2str(scale) 'H'];
 savepath2 = ['Images1\Train_' num2str(scale) 'L'];
 
